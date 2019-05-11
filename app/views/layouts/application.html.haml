@@ -1,0 +1,14 @@
+%html
+  %head
+    %meta(http-equiv="Content-Type" content="text/html; charset=utf-8")/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title= 'Doxie Gallery'
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+  %body
+    %header
+      = render 'layouts/navigation'
+    %main{:role => "main"}
+      = render 'layouts/messages'
+      = yield
