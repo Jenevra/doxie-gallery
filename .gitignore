@@ -74,5 +74,4 @@ pickle-email-*.html
 .idea/**/gradle.xml
 .idea/**/libraries
 
-/config/database.yml
 /config/secrets.yml
