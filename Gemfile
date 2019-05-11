@@ -24,7 +24,8 @@ gem 'rails-asset-jqueryui'
 # Icons fonts
 gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
 gem 'font-awesome-sass', '~> 4.6.2'
-
+# Use Devise for Authentication
+gem 'devise'
 # Pagination
 gem 'erb2haml'
 gem 'kaminari'

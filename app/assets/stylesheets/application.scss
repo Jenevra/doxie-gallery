@@ -13,3 +13,27 @@
  *= require_tree .
  *= require_self
  */
+
+
+@import "bootstrap";
+$font-stack:    Helvetica, sans-serif;
+$font-size: 14px;
+
+h1, h2, h3 {
+  font-family: $font-stack;
+  line-height: 120%;
+}
+
+h1 { font-size: 24px }
+h2 { font-size: 18px }
+h3 { font-size: 16px }
+
+p {
+  font-size: $font-size;
+  line-height: 150%;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+.nav-bar-extension {
+  background-color: #6838d7 !important;
+}
