@@ -1,0 +1,33 @@
+%h2 Edit #{resource_name.to_s.humanize}
+.row.main-form
+  = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+    .form-group
+      .cols-sm-10
+        = f.label :email
+        .input-group
+          = f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control', placeholder: 'Enter your email'
+    .form-group
+      .cols-sm-10
+        = f.label :password
+        .input-group
+          = f.password_field :password, autofocus: true, autocomplete: "new-password", class: 'form-control', placeholder: 'Enter your password'
+    .form-group
+      .cols-sm-10
+        = f.label :password_confirmation
+        .input-group
+          = f.password_field :password_confirmation, autofocus: true, autocomplete: "new-password", class: 'form-control', placeholder: 'Confirm your password'
+    .form-group
+      .cols-sm-10
+        = f.label :current_password
+        .input-group
+          = f.password_field :current_password, autofocus: true, autocomplete: "current-password", class: 'form-control', placeholder: 'Confirm your password'
+    .form-group
+      %input#button.btn.btn-primary.btn-lg.btn-block.login-button{ type: "submit", value: "Update"}/
+  %h3 Cancel my account
+  %p
+    Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
+
+  = render "devise/shared/error_messages", resource: resource
+  = link_to "Back", :back
+
+
