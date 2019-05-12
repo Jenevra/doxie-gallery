@@ -1,7 +1,7 @@
 %h1 Sign Up
+-#= render "devise/shared/error_messages", resource: resource
 .row.main-form
   = form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
-    = render "devise/shared/error_messages", resource: resource
     .form-group
       .cols-sm-10
         = f.label :email

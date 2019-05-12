@@ -23,11 +23,8 @@
           = f.password_field :current_password, autofocus: true, autocomplete: "current-password", class: 'form-control', placeholder: 'Confirm your password'
     .form-group
       %input#button.btn.btn-primary.btn-lg.btn-block.login-button{ type: "submit", value: "Update"}/
-  %h3 Cancel my account
-  %p
-    Unhappy? #{button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete}
 
   = render "devise/shared/error_messages", resource: resource
-  = link_to "Back", :back
+  -#= link_to "Back", :back
 
 
